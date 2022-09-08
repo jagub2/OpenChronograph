@@ -35,7 +35,7 @@ def main(script_path, image_path, width, height):
 
             # Have inkscape convert the svg to a png
             print("Converting " + image_path + " to png...")
-            p = subprocess.call(['inkscape', '-z', '-e', 'temp_img.png',
+            p = subprocess.call(['inkscape', '-z', '-o', 'temp_img.png',
                                  '-w', str(width), '-h', str(height), image_path],
                                 stdout=subprocess.PIPE)
 
